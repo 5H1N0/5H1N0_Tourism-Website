@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    color: #fff !important;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-brand img{
+    height:  75px;
+    margin-top: 0;
+}
+
+
+.navbar-nav{
+    text-align: center;
+}
+.nav-link{
+    margin-top: 10px;
+    font-family: poppins;
+    margin-left: 10px;
+    text-decoration: none;
+    border: 1px solid red;
+    padding: 8px;
+    margin-right: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px
+}
+
+.Active{
+    background-color:wheat;
+    color: blue;}
+
+.inActive{
+    background-color:black;
+    color: white;
+}
+
+.inActive:hover{
+    background-color: wheat;
+    color:black;
+    transition: 0.5s ease-in-out;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+/* @media only screen and (max-width:767px){
+    .navbar-nav.ml-auto{
+        background: rgba(0,0,0,0.5);
+    }
+    .navbar-toggler{
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+    }
+} */
+
+/* Gallery start */
+
+body{
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    background: #2f3238 !important;
+
+}
+
+.galleryContainer .container{
+    margin: 30px;
+}
+
+.galleryContainer{
+    margin-top: 50px;
+    margin-left: 160px;
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.image{
+    background: #50a7ff;
+    position: relative;
+    flex: 1;
+    max-width: 460px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+.image{
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+.image:hover{
+    opacity: 1;
+}
+
+.image .details{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f1f7f1;
+    width: 100%;
+    height: 100%;
+
+}
+
+.image .details h2{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 70px;
+    transition: 0.4s;
+    transition-property: transform;
+}
+
+.image .details h2 span{
+    font-weight: 900 ;
+}
+
+.image:hover .details h2{
+    transform: translateY(-30px);
+}
+
+.image .details p{
+    margin: 30px 30px 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity,transform;
+}
+
+.image:hover .details p{
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.more{
+    position: absolute;
+    background: rgba(255, 255, 255,0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    bottom: -60px;
+    transition: 0.6s;
+    transition-property: bottom;
+}
+.image:hover .more{
+    bottom: 0;
+}
+
+.more .read-more{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.more .read-more span{
+    font-weight: 900;
+}
+
+.more .icon-links i{
+    color:#000;
+    font-size: 20px;
+}
+
+.more .icon-links a:not(:last-child) i{
+    margin-right: 20px;
+}
+
+@media (max-width:1080px){
+    .image{
+        flex: 100%;
+        max-width: 480px;
+    }
+}
+
+@media (max-width:400px){
+    .image .details p{
+        font-size: 16px;
+    }
+
+    .more .read-more, .more .icon-links a i{
+        font-size: 18px;
+    }
+
+}
+
+.heading{
+    margin-top: 170px;
+    
+}
+.heading h1{
+    font-family: Merienda;
+    text-decoration: underline;
+    color: aqua;
+    text-align: center;
+    font-size: 50px;
+}
+.heading p{
+    font-family: Poppins;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding: 20;
+}
+.heading h2{
+    font-family: Merienda;
+    text-decoration: underline;
+    color: rgb(196, 39, 170);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
